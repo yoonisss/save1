@@ -1,11 +1,11 @@
 
-var Body = {
+  var Body = {
     setColor: function(color) {
-      $('body').css('color', color);
-      // document.querySelector('body').style.color = color;
+     $('body').css('color', color);
+       //document.querySelector('body').style.color = color;
    },
     setBackgroundColor: function(color) {
-      $('body').css('backgroundcolor', color);
+      $('body').css('backgroundColor', color);
       // document.querySelector('body').style.backgroundColor = color;
    }
    }
@@ -55,7 +55,7 @@ var Body = {
                 Body.setColor('white');
                 self.value = 'day'
                 //setColor('powderblue');
-                Links.setColor('red')
+                Links.setColor('powderblue')
                
             } else {
               //  target.style.backgroundColor = 'white';

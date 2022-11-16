@@ -6,6 +6,8 @@
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TYGS3191Q"></script>
+<script src="colors.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -14,52 +16,7 @@
   gtag('config', 'G-7TYGS3191Q');
 </script>
 <link rel="stylesheet" href="style.css" />
-<script>
-    function nightDayHandler(self) {  
-        //함수를 선언 하는 위치 : 선언부, 매개변수(parameter)
-        // 함수를 구현하는 위치 : 구현부
-        
-        // 함수를 사용할 때 보통 "호출했다, call" -> 함수를 사용할 때, 호출할 때 안에 있는 변수를
-        // 인자값(argument)
-        var target = document.querySelector('body');
-                if (self.value === 'night') {
-                    target.style.backgroundColor = 'black';
-                    target.style.color = 'white';
-                    self.value = 'day'
-        
-                    var alist = document.querySelectorAll('a');
-                    var i = 0;
-                    while ( i < alist.length) {
-                            alist[i].style.color = 'powderblue';
-                            console.log(alist[i]);
-                            i = i + 1;
-                        }
-                } else {
-                    target.style.backgroundColor = 'white';
-                    target.style.color = 'black';
-                    self.value = 'night'
-        
-                    var alist = document.querySelectorAll('a');
-                    var i = 0;
-                    while ( i < alist.length) {
-                            alist[i].style.color = 'blue';
-                            console.log(alist[i]);
-                            i = i + 1;
-                        }
-        
-                    }
-        }
-        </script>
-        <script>
-            var target = document.querySelector('body');
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while ( i < alist.length) {
-                alist[i].style.color = 'powderblue';
-                console.log(alist[i]);
-                i = i + 1 ;
-            }
-        </script>
+
 <body>
 <h1><a href="index.html">WEB</a></h1>
 
