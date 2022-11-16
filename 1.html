@@ -4,41 +4,108 @@
 <title>WEB1 - HTML </title>
 <meta charset="utf-8">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7TYGS3191Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7TYGS3191Q');
+</script>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 <link rel="stylesheet" href="style.css" />
-<body>
-    
-<h1><a href="index.html">WEB</a></h1>
-
-<input type="button" value="night" onclick="
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="colors.js"></script>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script>
+    function nightDayHandler(self) {  
+        //함수를 선언 하는 위치 : 선언부, 매개변수(parameter)
+        // 함수를 구현하는 위치 : 구현부
+        
+        // 함수를 사용할 때 보통 "호출했다, call" -> 함수를 사용할 때, 호출할 때 안에 있는 변수를
+        // 인자값(argument)
         var target = document.querySelector('body');
-        if (this.value === 'night') {
-            target.style.backgroundColor = 'black';
-            target.style.color = 'white';
-            this.value = 'day'
-
+                if (self.value === 'night') {
+                    target.style.backgroundColor = 'black';
+                    target.style.color = 'white';
+                    self.value = 'day'
+        
+                    var alist = document.querySelectorAll('a');
+                    var i = 0;
+                    while ( i < alist.length) {
+                            alist[i].style.color = 'powderblue';
+                            console.log(alist[i]);
+                            i = i + 1;
+                        }
+                } else {
+                    target.style.backgroundColor = 'white';
+                    target.style.color = 'black';
+                    self.value = 'night'
+        
+                    var alist = document.querySelectorAll('a');
+                    var i = 0;
+                    while ( i < alist.length) {
+                            alist[i].style.color = 'blue';
+                            console.log(alist[i]);
+                            i = i + 1;
+                        }
+        
+                    }
+        }
+        </script>
+        <script>
+            var target = document.querySelector('body');
             var alist = document.querySelectorAll('a');
             var i = 0;
             while ( i < alist.length) {
-                    alist[i].style.color = 'powderblue';
-                    console.log(alist[i]);
-                    i = i + 1;
-                }
-        } else {
-            target.style.backgroundColor = 'white';
-            target.style.color = 'black';
-            this.value = 'night'
-
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while ( i < alist.length) {
-                    alist[i].style.color = 'blue';
-                    console.log(alist[i]);
-                    i = i + 1;
-                }
-
+                alist[i].style.color = 'powderblue';
+                console.log(alist[i]);
+                i = i + 1 ;
             }
-        ">
+        </script>
 
+<body>
+   
+<h1><a href="index.html">WEB</a></h1>
 
 <div id="grid"> 
 <ol>
@@ -47,6 +114,9 @@
 <li><a href="3.html">JavaScript</a></li>
 </ol>
 <div>
+<input type="button" value="night" onclick="nightDayHandler(this)"><br>
+
+<a class="btn btn-primary" href="#" role="button">Link</a>
 <h2>HTML이란 무엇인가?</h2>
 
 <p><a href="https://www.w3.org/TR/2011/WD-html5-20110405/" title="HTML5 specification">Hypertext Markup
@@ -55,7 +125,7 @@ applications.
 Web browsers receive HTML documents from a web server or from local storage and render the documents into
 multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the
 appearance of the document.</p>
-<img src="고양이1.jpg" width="100%">
+<img src="고양이1.jpg" width="50%">
 <p style="margin-top: 40px;">
 HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as
 interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by
@@ -65,4 +135,36 @@ delineated by tags, written using angle brackets.
 </div>
 </div>
 </body>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/637482ccdaff0e1306d7a3a6/1ghvhts1f';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web1116-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </html>
