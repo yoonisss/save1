@@ -1,150 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="드롭다운.css">
+<link rel="stylesheet" href="버튼그룹.css">
+<link rel="stylesheet" href="갤러리.css">
 <body>
-    <div><h2>Tea Store</h2></div>
-   
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-               
-                <a class="nav-link active" aria-current="page" href="#">드롭다운1</a>
-                </li>
-                <a class="nav-link active" aria-current="page" href="#">드롭다운2</a>
-                </li>
-                <a class="nav-link active" aria-current="page" href="#">드롭다운3</a>
-                </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">드롭다운</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  드롭다운4
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">페이지1</a></li>
-                  <li><a class="dropdown-item" href="#">페이지2</a></li>
-                  <li><a class="dropdown-item" href="#">페이지3</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Link</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+  <div>
+    <h1 style="background-color:rgb(152, 247, 226);">
+    <img src="로고.png" width=60px height=40px>Tea Store
+    
+    <button class="btn btn-outline-success me-2" type="button">마이페이지</button>
+    <button class="btn btn-outline-success me-2" type="button">장바구니</button>
+    <button class="btn btn-outline-success me-2" type="button">회원가입</button>
+    <button class="btn btn-outline-success me-2" type="button">로그인</button>
+  
+  </h1>
+    <style>
+      button {
+        float: right;
+      }
+      </style>
 
-      <!-- //경로표시 -->
-      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">메인페이지</a></li>
-          <li class="breadcrumb-item active" aria-current="page">링크1</li>
-        </ol>
-      </nav>
-      <!-- - 이미지 삽입 -->
-      <img src="고양이1.jpg" width=30% height=100%>
+</div>
+<div class="btn-group">
+  <button class="button">마이페이지</button>
+  <button class="button">장바구니</button>
+  <button class="button">회원가입</button>
+  <button class="button">로그인</button>
 
-      <style>
-        body {
-          background-color:white;
-        }
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #38444d;
-        }
-        
-        li {
-          float: left;
-        }
-        
-        li a, .dropbtn {
-          display: inline-block;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-        
-        li a:hover, .dropdown:hover .dropbtn {
-          background-color: red;
-        }
-        
-        li.dropdown {
-          display: inline-block;
-        }
-        
-        .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #f9f9f9;
-          min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-        }
-        
-        .dropdown-content a {
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-          text-align: left;
-        }
-        
-        .dropdown-content a:hover {background-color: #f1f1f1;}
-        
-        .dropdown:hover .dropdown-content {
-          display: block;
-        }
-        </style>
-        </head>
-        <body>
-        
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#news">News</a></li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </li>
-        </ul>
-        
-        <h3>Dropdown Menu inside a Navigation Bar</h3>
-        <p>Hover over the "Dropdown" link to see the dropdown menu.</p>
-        
-        <i class="bi bi-cart4"></i>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-        </svg>
-        <i class="bi bi-person-circle"></i>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-        </svg>
+
+  <div>
+    <img src="헤더배경3.jpg" style="width: 100%;
+      height: 300px;">
+    </div>
+
+  <ul>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">홍차</a>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">허브티</a>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">밀크티</a>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">브랜드</a>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">EVENT</a>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </li>
+  </ul>
+
+  <p>
+  <h2><li>목차 타이틀</li></h2>
+  <br>
+</p>
+<hr>
+
+  <li>판매순</li>
+  <li>높은가격순</li>
+  <li>낮은가격순</li>
+  <li>인기순</li>
+  <li>신상품순</li>
+  <br>
+<hr>
+
+<br>
+<div class="gallery">
+  <a target="_blank" href="티1-1.jpg">
+    <img src="티1-1.jpg" alt="Cinque Terre" width="100" height="100">
+  </a>
+  <div class="desc">상품명</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="티2.jpg">
+    <img src="티2.jpg" alt="Forest" width="500" height="300">
+  </a>
+  <div class="desc">상품명</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="티3.jpg">
+    <img src="티3.jpg" alt="Forest" width="500" height="400">
+  </a>
+  <div class="desc">상품명</div>
+</div>
+<br>
+
+
+<br>
+
+<div class="gallery">
+  <a target="_blank" href="티1-5.jpg">
+    <img src="티1-5.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">상품명</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="티1-4.jpg">
+    <img src="티1-4.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">상품명</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="헤더배경4.jpg">
+    <img src="헤더배경4.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">상품명</div>
+</div>
+<br>
+<br>
+
+
+<hr>
+
+<footer>
+  <small>사이트 정보 주석 표시</small>
+  <div>주소1</div>
+  <div>주소2.....아직 정리되지 않음.</div>
+  <div>주소3</div>
+  </footer>
+
 </body>
+
+
 </html>

@@ -5,14 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<div><h2>Tea Store</h2></div>
+    <link rel="stylesheet" href="드롭다운.css">
+   
+  </head>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<body>
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(238, 230, 230);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: rgb(7, 7, 7);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(27, 26, 26);
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  </style>
+
+
 <div>
-<img src="고양이1.jpg" width=1500px height=200px>
+  <h1 style="background-color:rgb(152, 247, 226);">
+  <img src="로고.png" width=60px height=40px>Tea Store
+  
+  <button class="btn btn-outline-success me-2" type="button">마이페이지</button>
+  <button class="btn btn-outline-success me-2" type="button">장바구니</button>
+  <button class="btn btn-outline-success me-2" type="button">로그인</button>
+  </h1>
 </div>
-<link rel="stylesheet" href="드롭다운.css" />
-        <body>
-          
+
+<style>
+  button {
+    float: right;
+  }
+  </style>
+  <div>
+    설정중
+  </div>
+  
+  
+
+
+
+<div>
+<img src="헤더배경4.jpg" style="width: 100%;
+  height: 300px;">
+</div>
+
+<hr>
+
         <ul>
           <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">홍차</a>
@@ -45,7 +129,8 @@
               <a href="#">Link 2</a>
               <a href="#">Link 3</a>
             </div>
-          </li><li class="dropdown">
+          </li>
+          <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">EVENT</a>
             <div class="dropdown-content">
               <a href="#">Link 1</a>
@@ -54,6 +139,7 @@
             </div>
           </li>
         </ul>
+
         <hr>
         <h3>Dropdown설정중</h3>
         <hr>
@@ -69,9 +155,31 @@
           </center>
           <hr align="center" width=50%</hr>
           </header>
-          <img src="고양이1.jpg" width=30% height=50% style="float:inline-end">
-<hr size="10" align="left width=90% noshade="noshade"></hr>
+          <article>
+          <img src="고양이1.jpg" width=30% height=40% style="float:none">
+          <img src="고양이1.jpg" width=30% height=40% style="float:none">
+          <img src="고양이1.jpg" width=30% height=40% style="float:none">
 
+
+          <hr style="width:100%">
+          <article>
+          <figure class="figure">
+            <img src="티1.png" class="figure-img img-fluid rounded" style="float: center; clear:both; width:300px; height:300px;">
+            <figcaption class="figure-caption text-center">제품 설명적을까?</figcaption>
+          </figure>
+         
+          <figure class="figure">
+            <img src="티2.jpg" class="figure-img img-fluid rounded" style="float: center; clear:both; width:300px; height:300px;">
+            <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="티3.jpg" class="figure-img img-fluid rounded" style="float: center; clear:both; width:300px; height:300px;">
+            <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+          </figure>
+
+        </article>
+         
+<hr>
 
 <footer>
 <small>사이트 정보 표시</small>
