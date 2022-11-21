@@ -1,22 +1,28 @@
 div.gallery {
-    margin: 0px;
+    margin: 10px;
     border: 1px solid #ccc;
     float: left;
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 300px;
   }
   
   div.gallery:hover {
-    border: 10px solid rgb(63, 63, 63);
+    border: 20px solid rgb(63, 63, 63);
   }
   
   div.gallery img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   
+ 
   div.desc {
-    padding: 1px;
+    padding: 10px;
     text-align: center;
+    color:rgb(15, 15, 15);
+    
   }
   
+  h4 {
+    color: rgb(71, 86, 221);
+  }

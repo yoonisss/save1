@@ -9,37 +9,246 @@
 <link rel="stylesheet" href="드롭다운.css">
 <link rel="stylesheet" href="버튼그룹.css">
 <link rel="stylesheet" href="갤러리.css">
-<body>
-  <div>
-    <h1 style="background-color:rgb(152, 247, 226);">
-    <img src="로고.png" width=60px height=40px>Tea Store
+<style>
+  #grid {
+    border: 5px solid #4CAF50(203, 255, 192);
+    display: grid;
+    grid-template-columns: 1fr 512px;
+    margin: 0;
+
+ 
+  }
+  div {
+    border: 0px solid rgb(247, 241, 241);
+    margin: 0;
+  }
+  #banner {
+    border: 0px solid rgb(203, 255, 192);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+  }
+  #banner2 {
+    border: 0px solid rgb(203, 255, 192);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
     
-    <button class="btn btn-outline-success me-2" type="button">마이페이지</button>
-    <button class="btn btn-outline-success me-2" type="button">장바구니</button>
-    <button class="btn btn-outline-success me-2" type="button">회원가입</button>
-    <button class="btn btn-outline-success me-2" type="button">로그인</button>
+
+  }
+
+  .parent {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+#menu {
+  display: grid;
+    border: 0px solid rgb(247, 241, 241);
+    margin: 0;
+    grid-template-rows:  1fr;
+    row-gap: 10px;
+  }
+
+  #menutitle {
+  display: grid;
+    border: 0px solid rgb(247, 241, 241);
+    margin: 0;
+    grid-template-rows:  1fr;
+    row-gap: 10px;
+  }
+  #menutilte li {
+  display: none;  
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
   
-  </h1>
-    <style>
-      button {
-        float: right;
-      }
-      </style>
-
+</style>
+<!-- //로그인 버튼 링크 -->
+<style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #1cc9f5;
+    color: rgb(255, 254, 254);
+    padding: 15px 30px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 30%;
+    border-radius: 30%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+  </style>
+<body>
+  <div id="grid">
+    <h1 style="background-color:#4CAF50;margin-top:5px; margin-bottom:25px;" text>
+    <img src="imgs/로고.png" style="width: 43px; height:43px;">
+    Tea Store
+  </h1> 
+    <div class="btn-group">
+      <button class="button" onclick="document.getElementById().style.display='block'" style="width:auto;">마이페이지</button>
+      <button class="button" onclick="document.getElementById().style.display='block'" style="width:auto;">장바구니</button>
+      <button class="button" onclick="location.href='회원가입 폼.html'".style.display='block'" style="width:auto;">회원가입</button>
+      <button class="button"onclick="document.getElementById('id01').style.display='block'" style="width:auto;">로그인</button>
+  </div>
 </div>
-<div class="btn-group">
-  <button class="button">마이페이지</button>
-  <button class="button">장바구니</button>
-  <button class="button">회원가입</button>
-  <button class="button">로그인</button>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="imgs/로고.png" alt="icon" class="avatar">
+    </div>
 
+    <div class="container">
+        <label for="uname"><b>아이디</b></label>
+        <input type="text" placeholder="아이디를 입력하세요." name="uname" required>
+    
+        <label for="psw"><b>비밀번호</b></label>
+        <input type="password" placeholder="******" name="psw" required>
+            
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> 아이디 저장
+        </label>
+      </div>
+    
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">비밀번호를 잃어버렸습니까?</a></span>
+      </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
   <div>
-    <img src="헤더배경3.jpg" style="width: 100%;
+    <img src="imgs/헤더배경3.jpg" style="width: 100%;
       height: 300px;">
     </div>
 
-  <ul>
+  <div id="menu">
+    <ul>
     <li class="dropdown">
       <a href="javascript:void(0)" class="dropbtn">홍차</a>
       <div class="dropdown-content">
@@ -80,81 +289,138 @@
       </div>
     </li>
   </ul>
-
-  <p>
-  <h2><li>목차 타이틀</li></h2>
-  <br>
+</div>
+</div>
+  
+ 
 </p>
-<hr>
+
+<div id="menutitle">
+  <li>목차 타이틀</li>
+  <div>
 
   <li>판매순</li>
   <li>높은가격순</li>
   <li>낮은가격순</li>
   <li>인기순</li>
   <li>신상품순</li>
-  <br>
+
+  </div>
+  <hr>
+    
+    <br>
+    </div>
+</div>
+<div>
+  <h2>목차1</h2>
 <hr>
+</div>
 
+
+<div id="banner">
+<div class="gallery">
+    <img src="imgs/티1-5.jpg" alt="Cinque Terre" width="200" height="200">
+  <div class="desc">
+  <h3>상품명</h3>
+  <hr>
+  상품 간략 설명</P> 
+	<h4>금액</h4>
+</div>
+</div>
+
+<div class="gallery">
+    <img src="imgs/티1-4.jpg" alt="Cinque Terre" width="200" height="200">
+    <div class="desc">
+      <h3>상품명</h3>
+      <hr>
+      상품 간략 설명</P> 
+      <h4>금액</h4>
+    </div>
+
+</div>
+
+
+<div class="gallery">
+    <img src="imgs/티1-3.jpg" alt="Cinque Terre" width="200" height="200">
+    <div class="desc">
+      <h3>상품명</h3>
+      <hr>
+      상품 간략 설명</P> 
+      <h4>금액</h4>
+    </div>
+  
+</div>
+</div>
 <br>
-<div class="gallery">
-  <a target="_blank" href="티1-1.jpg">
-    <img src="티1-1.jpg" alt="Cinque Terre" width="100" height="100">
-  </a>
-  <div class="desc">상품명</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="티2.jpg">
-    <img src="티2.jpg" alt="Forest" width="500" height="300">
-  </a>
-  <div class="desc">상품명</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="티3.jpg">
-    <img src="티3.jpg" alt="Forest" width="500" height="400">
-  </a>
-  <div class="desc">상품명</div>
-</div>
 <br>
 <br>
-<br>
-
-<div class="gallery">
-  <a target="_blank" href="티1-5.jpg">
-    <img src="티1-5.jpg" alt="Forest" width="600" height="400">
-  </a>
-  <div class="desc">상품명</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="티1-4.jpg">
-    <img src="티1-4.jpg" alt="Forest" width="600" height="400">
-  </a>
-  <div class="desc">상품명</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="헤더배경4.jpg">
-    <img src="헤더배경4.jpg" alt="Forest" width="600" height="400">
-  </a>
-  <div class="desc">상품명</div>
-</div>
 <br>
 <br>
 <br>
 <br>
 <div>
+  <h2>목차2</h2>
 <hr>
 </div>
-<div>
+
+<div id="banner2">
+<div class="gallery">
+  
+  <img src="imgs/티1-2.jpg" alt="Cinque Terre" width="200" height="200">
+  </a>
+  <div class="desc">
+    <h3>상품명</h3>
+    <hr>
+    상품 간략 설명</P> 
+    <h4>금액</h4>
+  </div> 
+</div>
+
+<div class="gallery">
+ 
+    <img src="imgs/티1-6.jpg" alt="Cinque Terre" width="200" height="200">
+    <div class="desc">
+      <h3>상품명</h3>
+      <hr>
+      상품 간략 설명</P> 
+      <h4>금액</h4>
+    </div>
+</div>
+
+<div class="gallery">
+  
+    <img src="imgs/티1-1.jpg" alt="Cinque Terre" width="200" height="200">
+    <div class="desc">
+      <h3>상품명</h3>
+      <hr>
+      상품 간략 설명</P> 
+      <h4>금액</h4>
+    </div>
+    </div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+<div id="footer">
 <footer>
   <small>사이트 정보 주석 표시</small>
   <div>상호명 대표  주소 </div>
   <div>고객센터  팩스  이메일</div>
-  <div>사업자 등록번호   통신판매업 신고번호</div>
+  <div>사업자 등록번호  통신판매업 신고번호</div>
   <div>Copyright ⓒTeaStore. All Rights reserved.</div>
   </footer>
+</div>
 </div>
 </body>
 
