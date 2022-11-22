@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <link rel="stylesheet" href="드롭다운.css">
 <link rel="stylesheet" href="버튼그룹.css">
@@ -40,6 +40,11 @@
   .parent {
   display: grid;
   grid-template-rows: auto 1fr auto;
+}
+
+#chart{
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
 }
 
 #menu {
@@ -190,6 +195,9 @@
   }
   </style>
 <body>
+
+  
+
   <div id="grid">
     <h1 style="background-color:#4CAF50;margin-top:5px; margin-bottom:25px;" text>
     <img src="imgs/로고.png" style="width: 43px; height:43px;">
@@ -295,121 +303,152 @@ window.onclick = function(event) {
  
 </p>
 
-<div id="menutitle">
-  <li>목차 타이틀</li>
-  <div>
 
-  <li>판매순</li>
-  <li>높은가격순</li>
-  <li>낮은가격순</li>
-  <li>인기순</li>
-  <li>신상품순</li>
-
-  </div>
-  <hr>
-    
+<div class="tools">
+    <a href="index.html" class="local_home">HOME</a>
+    <span> > </span>
+    <strong>회원가입</strong>
+    </div>
     <br>
-    </div>
-</div>
 <div>
-  <h2>홍차</h2>
+  
 <hr>
 </div>
-
-
-<div id="banner">
-<div class="gallery">
-    <img src="imgs/티1-5.jpg" alt="Cinque Terre" width="200" height="200">
-  <div class="desc">
-  <h3>상품명</h3>
-  <hr>
-  상품 간략 설명</P> 
-	<h4>금액</h4>
-</div>
-</div>
-
-<div class="gallery">
-    <img src="imgs/티1-4.jpg" alt="Cinque Terre" width="200" height="200">
-    <div class="desc">
-      <h3>상품명</h3>
-      <hr>
-      상품 간략 설명</P> 
-      <h4>금액</h4>
-    </div>
-
-</div>
-
-
-<div class="gallery">
-    <img src="imgs/티1-3.jpg" alt="Cinque Terre" width="200" height="200">
-    <div class="desc">
-      <h3>상품명</h3>
-      <hr>
-      상품 간략 설명</P> 
-      <h4>금액</h4>
-    </div>
-  
-</div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div>
-  <h2>SALE</h2>
-<hr>
-</div>
-
-<div id="banner2">
-<div class="gallery">
-  
-  <img src="imgs/티1-2.jpg" alt="Cinque Terre" width="200" height="200">
-  </a>
-  <div class="desc">
-    <h3>상품명</h3>
-    <hr>
-    상품 간략 설명</P> 
-    <h4>금액</h4>
-  </div> 
-</div>
-
-<div class="gallery">
+<style>
  
-    <img src="imgs/티1-6.jpg" alt="Cinque Terre" width="200" height="200">
-    <div class="desc">
-      <h3>상품명</h3>
-      <hr>
-      상품 간략 설명</P> 
-      <h4>금액</h4>
+    h, td, tr, input, textarea, select, FORM
+    {
+      font-family:고딕;
+     font-size:1em;
+     border-radius:5px;
+     
+    }
+    
+    table, FORM
+    { border:none;
+     border-spacing:15px;
+  
+    }
+  
+     
+     </style>
+   
+   
+   </head>
+   <body style="background-color:#ebf5f0">
+    <center>
+    <h1> Q&A </h1>
+  
+    <hr width="20%">
+    <form>
+    <div id = "chart">
     </div>
+    <div>
+        <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">No.</th>
+            <th scope="col">제목</th>
+            <th scope="col">작성자</th>
+            <th scope="col">작성일</th>
+            <th scope="col">조회수</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+          
+        </tbody>
+      </table> 
+   
+
+</form>
+<hr>
+글쓰기 버튼
+페이지 넘김 버튼
+
+   </center>
+   <div> 
+  </div>
 </div>
 
-<div class="gallery">
-  
-    <img src="imgs/티1-1.jpg" alt="Cinque Terre" width="200" height="200">
-    <div class="desc">
-      <h3>상품명</h3>
-      <hr>
-      상품 간략 설명</P> 
-      <h4>금액</h4>
-    </div>
-    </div>
-</div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+
 <hr>
 
 <div id="footer">
@@ -422,7 +461,7 @@ window.onclick = function(event) {
   </footer>
 </div>
 </div>
+
+    
 </body>
-
-
 </html>
