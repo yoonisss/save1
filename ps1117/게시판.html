@@ -16,19 +16,32 @@
    font-family:고딕;
   font-size:1em;
   border-radius:5px;
-  
+   width: 50%;
+   height: auto;
+   margin-left: 20%;
+   margin-right: 30%;
  }
  table.FORM
  {
-  border:1px solid rgba(36, 228, 172, 0.29);
+  border:1px solid rgba(10, 10, 10, 0.29);
   border-spacing:15px;
  }
+ 
+  #chart {
+    border: 5px solid #4CAF50(203, 255, 192);
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    margin: 0;
+    }
 </style>
 <body>
 
     <h2>게시판</h2>
+    <hr width="20%">
+    <form>
     <div id = "chart">
-    
+    </div>
+    <div>
         <table class="table">
         <thead>
           <tr>
@@ -127,6 +140,9 @@
         </tbody>
       </table> 
     </div>
+
+<div>  </div>
 </div>
+</form>
     </body>
 </html>
