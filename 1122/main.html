@@ -58,11 +58,11 @@
     row-gap: 10px;
   }
   #menutilte li {
-  display: none;  
+  display: grid;  
   float: right;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
   
 </style>
@@ -196,9 +196,9 @@
     Tea Store
   </h1> 
     <div class="btn-group">
-      <button class="button" onclick="document.getElementById().style.display='block'" style="width:auto;">마이페이지</button>
-      <button class="button" onclick="document.getElementById().style.display='block'" style="width:auto;">장바구니</button>
-      <button class="button" onclick="location.href='회원가입 폼.html'".style.display='block'" style="width:auto;">회원가입</button>
+      <button class="button" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">마이페이지</button>
+      <button class="button" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">장바구니</button>
+      <button class="button" onclick="location.href='회원가입.html'".style.display='block'" style="width:auto;">회원가입</button>
       <button class="button"onclick="document.getElementById('id01').style.display='block'" style="width:auto;">로그인</button>
   </div>
 </div>
@@ -241,6 +241,72 @@ window.onclick = function(event) {
     }
 }
 </script>
+  <!-- 장바구니 팝업 -->
+<div id="id02" class="modal">
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="imgs/로고.png" alt="icon" class="avatar">
+    </div>
+
+    <div class="container">
+        <label for="uname"><b>로그인 후 다시 시도해 주세요.</b></label>
+      
+      </div>
+    
+      <div class="container" style="background-color:#f1f1f1">
+        
+        <span class="psw"></a></span>
+      </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<!-- 마이페이지 팝업 -->
+<div id="id03" class="modal">
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="imgs/로고.png" alt="icon" class="avatar">
+    </div>
+
+    <div class="container">
+        <label for="uname"><b>로그인 후 다시 시도해 주세요.</b></label>
+      
+      </div>
+    
+      <div class="container" style="background-color:#f1f1f1">
+        
+        <span class="psw"></a></span>
+      </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id03');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+  
+ 
 
   <div>
     <img src="imgs/헤더배경3.jpg" style="width: 100%;
@@ -296,15 +362,15 @@ window.onclick = function(event) {
 </p>
 
 <div id="menutitle">
-  <li>목차 타이틀</li>
+  <li>Home</li>
   <div>
-
-  <li>판매순</li>
+    <span>
+      <li> 판매순</li>
   <li>높은가격순</li>
   <li>낮은가격순</li>
   <li>인기순</li>
   <li>신상품순</li>
-
+</span>
   </div>
   <hr>
     
@@ -312,7 +378,7 @@ window.onclick = function(event) {
     </div>
 </div>
 <div>
-  <h2>홍차</h2>
+  <h2>NEW</h2>
 <hr>
 </div>
 
@@ -321,20 +387,20 @@ window.onclick = function(event) {
 <div class="gallery">
     <img src="imgs/티1-5.jpg" alt="Cinque Terre" width="200" height="200">
   <div class="desc">
-  <h3>상품명</h3>
+  <h3>얼그레이 샘플러</h3>
   <hr>
-  상품 간략 설명</P> 
-	<h4>금액</h4>
+  [15종 30티백]</P> 
+	<h4>14,900원</h4>
 </div>
 </div>
 
 <div class="gallery">
     <img src="imgs/티1-4.jpg" alt="Cinque Terre" width="200" height="200">
     <div class="desc">
-      <h3>상품명</h3>
+      <h3>허브차 샘플러</h3>
       <hr>
-      상품 간략 설명</P> 
-      <h4>금액</h4>
+      [20종 22티백]</P> 
+      <h4>15,500원</h4>
     </div>
 
 </div>
@@ -343,10 +409,10 @@ window.onclick = function(event) {
 <div class="gallery">
     <img src="imgs/티1-3.jpg" alt="Cinque Terre" width="200" height="200">
     <div class="desc">
-      <h3>상품명</h3>
+      <h3>아이스티 샘플러</h3>
       <hr>
-      상품 간략 설명</P> 
-      <h4>금액</h4>
+      [15종 28티백]</P> 
+      <h4>13,400원</h4>
     </div>
   
 </div>
@@ -369,10 +435,10 @@ window.onclick = function(event) {
   <img src="imgs/티1-2.jpg" alt="Cinque Terre" width="200" height="200">
   </a>
   <div class="desc">
-    <h3>상품명</h3>
+    <h3>베티나르디 다즐링</h3>
     <hr>
-    상품 간략 설명</P> 
-    <h4>금액</h4>
+    [20 티백]</P> 
+    <h4>10,500원</h4>
   </div> 
 </div>
 
@@ -380,10 +446,10 @@ window.onclick = function(event) {
  
     <img src="imgs/티1-6.jpg" alt="Cinque Terre" width="200" height="200">
     <div class="desc">
-      <h3>상품명</h3>
+      <h3>아마드 실론</h3>
       <hr>
-      상품 간략 설명</P> 
-      <h4>금액</h4>
+      [25티백]</P> 
+      <h4>8,000원</h4>
     </div>
 </div>
 
@@ -391,10 +457,10 @@ window.onclick = function(event) {
   
     <img src="imgs/티1-1.jpg" alt="Cinque Terre" width="200" height="200">
     <div class="desc">
-      <h3>상품명</h3>
+      <h3>트와이닝 얼그레이</h3>
       <hr>
-      상품 간략 설명</P> 
-      <h4>금액</h4>
+      [틴 500g]</P> 
+      <h4>22,400원</h4>
     </div>
     </div>
 </div>
@@ -414,11 +480,14 @@ window.onclick = function(event) {
 
 <div id="footer">
 <footer>
-  <small>사이트 정보 주석 표시</small>
-  <div>상호명:(주)티스토어 대표 김지윤  주소 부산시 부산진구 </div>
-  <div>고객센터 012-3456-7890  팩스 02-XX0X-00X  이메일 teastore@co.kr</div>
-  <div>사업자 등록번호 153-456785 통신판매업 신고번호 123586502</div>
+  <br>
+  <small>
+  <div> 상호명 : (주)티스토어 / 대표 : 김지윤 / 주소 : 부산시 부산진구 중앙대로 </div>
+  <div> 고객센터 : 012-3456-7890 / 팩스 :  02-XX0X-00X / 이메일 : teastore@co.kr</div>
+  <div>사업자 등록번호 : 153-76-456785 / 통신판매업 신고번호 2022-부산진구-0012</div>
   <div>Copyright ⓒTeaStore. All Rights reserved.</div>
+  </small>
+  <br>
   </footer>
 </div>
 </div>

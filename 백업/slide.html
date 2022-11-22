@@ -1,23 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    #slide{
-        position: relative;
-        width: 500px;
-    }
-</style>
-<body>
-    <div id="slide" val="1" mx="3">
-        <li id="img1"><img src="img/1/jpg" alt=""></li>
-        <li id="img2"><img src="img/2/jpg" alt=""></li>
-        <li id="img3"><img src="img/3/jpg" alt=""></li>
-    </div>
+    <html lang="ko">
     
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>슬라이드</title>
+      <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    
+    <body>
+      <div id="slideShow">
+        <ul class="slides">
+        
+            <li><img src="s2.jpg" alt=""></li>
+            <li><img src="s1.jpg" alt=""></li>
+            <li><img src="s3.jpg" alt=""></li>
+            <li><img src="s2.jpg" alt=""></li>
+            <li><img src="s1.jpg" alt=""></li>
+            <li><img src="s3.jpg" alt=""></li>
+            <li><img src="s2.jpg" alt=""></li>
+            <li><img src="s1.jpg" alt=""></li>
+          
+        </ul>
+        <p class="controller">
+          <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 --> 
+          <span class="prev">&lang;</span> 
+          <span class="next">&rang;</span>
+        </p>
+      </div>
+      <script src="JS/slideShow.js"></script>
+    </body>
+    
+    </html>
 </body>
 </html>
